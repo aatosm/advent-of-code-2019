@@ -8,7 +8,7 @@ const countFuel = (mass: number): number => {
 };
 
 const countFuelRecursive = (mass: number): number => {
-  const fuel = Math.floor(mass / 3) - 2;
+  const fuel = countFuel(mass);
   return fuel <= 0 ? 0 : fuel + countFuelRecursive(fuel);
 }
 
