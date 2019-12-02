@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const inputStrings = fs.readFileSync('./inputs/day1.txt').toString().split('\n');
+const inputStrings = fs.readFileSync('./inputs/day01.txt').toString().split('\n');
 const input = inputStrings.map((i: string) => parseInt(i));
 
 const countFuel = (mass: number): number => {
